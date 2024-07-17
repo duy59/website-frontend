@@ -1,0 +1,118 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Tỉ lệ cột 1:3 */
+    gap: 20px; /* Khoảng cách giữa các cột */
+  }
+  
+  .col-3 {
+    display: flex;
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+  grid-column: span 1; 
+  }
+  
+  .col-9 {
+    grid-column: span 3; /* Cột chiếm 3 phần */
+  }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates 5 columns that each take up an equal fraction of the available space */
+    gap: 20px; /* Adjust the gap between items as needed */
+  }
+  
+  .product_list {
+    flex: 1;
+  }
+  
+  .product_item {
+    border: 1px solid #ddd; /* Light grey border */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .product_image img {
+    width: 100%; /* Make image fill the container width */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Resize the image to maintain its aspect ratio while filling the element's entire content box */
+    border-radius: 5px; /* Rounded corners for images */
+  }
+  
+  .product_title {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .Pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .paginationList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px; /* Adjust gap as needed */
+  }
+  
+  .paginationItem {
+    cursor: pointer;
+  }
+
+  .nextButton {
+    padding: 10px 20px;
+    background-color: red; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor to indicate it's clickable */
+    text-decoration: none; /* Removes underline from the link */
+    display: inline-block; /* Allows applying padding and dimensions */
+    transition: background-color 0.3s ease; /* Smooth background color change on hover */
+  }
+  
+  .nextButton:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+  }
+
+  .prevButton{
+    padding: 10px 20px;
+    background-color: red; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor to indicate it's clickable */
+    text-decoration: none; /* Removes underline from the link */
+    display: inline-block; /* Allows applying padding and dimensions */
+    transition: background-color 0.3s ease; /* Smooth background color change on hover */
+  }
+  
+  .prevButton:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+  }
+  
+  .paginationItem a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+  }
+  
+  .paginationItem a:hover {
+    background-color: #0056b3;
+  }
+  
+  .disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .active {
+    background-color: #0056b3;
+  }
+
